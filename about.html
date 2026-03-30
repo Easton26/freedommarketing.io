@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Freedom Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#book" class="btn">Book a Call</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ABOUT HERO -->
+    <div class="about-hero">
+      <span class="section-tag">About Us</span>
+      <h2 style="font-size: clamp(36px, 5vw, 64px); font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; max-width: 700px;">
+        Built on Results.<br>Driven by Freedom.
+      </h2>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ABOUT CONTENT -->
+    <div class="about-grid">
+      <div>
+        <span class="section-tag">Our Story</span>
+        <p>Freedom Marketing was built on a simple belief: businesses deserve an agency that actually cares about their growth — not just their retainer.</p>
+        <p>We specialize exclusively in Meta advertising — Facebook and Instagram — because depth beats breadth. While other agencies spread themselves thin across every platform, we've gone all in on mastering the Meta ecosystem so our clients get results that actually move the needle.</p>
+        <p>From local service businesses to e-commerce brands, we've helped companies of all sizes turn their ad spend into predictable, scalable revenue.</p>
+      </div>
+
+      <div>
+        <span class="section-tag">What We Stand For</span>
+        <ul class="values-list">
+          <li>
+            <span class="val-title">Transparency</span>
+            <span class="val-desc">You always know where your budget is going and what results it's driving. No fluff, no hiding behind vanity metrics.</span>
+          </li>
+          <li>
+            <span class="val-title">Accountability</span>
+            <span class="val-desc">We treat your ad spend like it's our own money. If something isn't working, we fix it — fast.</span>
+          </li>
+          <li>
+            <span class="val-title">Ownership</span>
+            <span class="val-desc">We take full ownership of campaigns from strategy to execution. You focus on your business, we focus on your ads.</span>
+          </li>
+          <li>
+            <span class="val-title">Results First</span>
+            <span class="val-desc">Every decision we make is driven by one question: does this move the numbers? Clicks and impressions don't pay the bills — conversions do.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num">$2M+</span>
+        <span class="stat-label">Ad Spend Managed</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3.8×</span>
+        <span class="stat-label">Average ROAS</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">50+</span>
+        <span class="stat-label">Clients Scaled</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label">Meta Focused</span>
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+      <h2>Let's Talk About Your Growth.</h2>
+      <p>Book a free strategy call — no pitch, no pressure. Just a real conversation about your business and what's possible with the right ads.</p>
+      <a href="contact.html#book" class="btn btn-lg">Book a Free Strategy Call</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </div>
+    <p>&copy; 2025 Freedom Marketing. All rights reserved.</p>
+    <p style="color: var(--gray); font-size: 13px;">Meta Ads · Facebook &amp; Instagram</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Freedom Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#book" class="btn">Book a Call</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="services-hero">
+      <span class="section-tag">What We Do</span>
+      <h2 style="font-size: clamp(36px, 5vw, 64px); font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; max-width: 700px;">
+        Everything You Need<br>to Win on Meta.
+      </h2>
+      <p style="color: var(--light); font-size: 17px; max-width: 520px; margin-top: 16px;">
+        We handle every piece of your paid social strategy — from creative to conversion — so you can focus on running your business.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- SERVICES GRID -->
+    <div class="services-grid" style="padding: 0 48px; max-width: 100%; margin: 0;">
+      <div style="background: var(--border); display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1px; width: 100%;">
+
+        <div class="service-card">
+          <span class="section-tag">Core Service</span>
+          <h3>Meta Ads Management</h3>
+          <p>Full-service campaign management on Facebook and Instagram — from initial setup to daily optimization. We own the results.</p>
+          <ul>
+            <li>Campaign strategy &amp; structure</li>
+            <li>Audience research &amp; targeting</li>
+            <li>Daily bid &amp; budget optimization</li>
+            <li>A/B testing &amp; iteration</li>
+            <li>Monthly performance reporting</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="section-tag">Creative</span>
+          <h3>Ad Creative &amp; Copy</h3>
+          <p>The best targeting in the world won't save a bad ad. We create scroll-stopping visuals and direct-response copy that drives action.</p>
+          <ul>
+            <li>Static image ad design</li>
+            <li>Video ad scripts &amp; editing</li>
+            <li>Direct-response copywriting</li>
+            <li>Creative testing frameworks</li>
+            <li>UGC-style ad production</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="section-tag">Funnel</span>
+          <h3>Lead Generation</h3>
+          <p>We build end-to-end lead gen systems — ads, landing pages, and follow-up — that fill your pipeline with qualified prospects.</p>
+          <ul>
+            <li>Lead form &amp; landing page setup</li>
+            <li>Meta Lead Ads configuration</li>
+            <li>CRM integration &amp; automation</li>
+            <li>Cost-per-lead optimization</li>
+            <li>Retargeting sequences</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="section-tag">E-Commerce</span>
+          <h3>E-Commerce Scaling</h3>
+          <p>For product-based businesses ready to scale. We run Advantage+ Shopping, dynamic retargeting, and full-funnel campaigns that grow revenue.</p>
+          <ul>
+            <li>Catalogue &amp; product feed setup</li>
+            <li>Advantage+ Shopping Campaigns</li>
+            <li>Dynamic product retargeting</li>
+            <li>ROAS &amp; revenue optimization</li>
+            <li>Seasonal &amp; promo strategies</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="section-tag">Foundation</span>
+          <h3>Pixel &amp; Tracking Setup</h3>
+          <p>Bad data kills great campaigns. We make sure your Meta Pixel, Conversions API, and event tracking are set up correctly before a dollar is spent.</p>
+          <ul>
+            <li>Meta Pixel installation &amp; audit</li>
+            <li>Conversions API (CAPI) setup</li>
+            <li>Custom event configuration</li>
+            <li>iOS 14+ signal recovery</li>
+            <li>Attribution window analysis</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="section-tag">Audit</span>
+          <h3>Ad Account Audit</h3>
+          <p>Already running ads but not seeing the results you want? We'll audit your account and tell you exactly what's holding you back.</p>
+          <ul>
+            <li>Full account structure review</li>
+            <li>Creative &amp; copy analysis</li>
+            <li>Audience &amp; targeting audit</li>
+            <li>Tracking verification</li>
+            <li>Actionable improvement plan</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA BAND -->
+    <div class="cta-band" style="margin-top: 0;">
+      <h2>Not Sure Which Service You Need?</h2>
+      <p>Book a free strategy call and we'll tell you exactly what will move the needle for your specific business.</p>
+      <a href="contact.html#book" class="btn btn-lg">Book a Free Strategy Call</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </div>
+    <p>&copy; 2025 Freedom Marketing. All rights reserved.</p>
+    <p style="color: var(--gray); font-size: 13px;">Meta Ads · Facebook &amp; Instagram</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

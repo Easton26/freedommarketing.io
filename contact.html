@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Freedom Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="#book" class="btn">Book a Call</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="contact-wrap" id="book">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Book Your Free<br>Strategy Call.</h2>
+        <p>Fill out the form and we'll reach out to schedule a call. No pitch, no pressure — just a straight conversation about your business and what paid ads could do for it.</p>
+
+        <div class="contact-detail">
+          <!-- Replace with your real email -->
+          <a href="mailto:easton@freedommarketing.io">✉ easton@freedommarketing.io</a>
+          <a href="mailto:marcus@freedommarketing.io">✉ marcus@freedommarketing.io</a>
+          <a href="https://instagram.com/freedommarketing._" target="_blank" rel="noopener">📸 @freedommarketing._</a>
+        </div>
+
+        <div class="socials">
+          <a class="social-link" href="https://instagram.com/freedommarketing._" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@yourbusiness.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" name="business" placeholder="Your Business" />
+          </div>
+
+          <div class="form-group">
+            <label for="service">What are you looking for?</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option value="meta-ads">Meta Ads Management</option>
+              <option value="lead-gen">Lead Generation</option>
+              <option value="ecommerce">E-Commerce Scaling</option>
+              <option value="creative">Ad Creative &amp; Copy</option>
+              <option value="audit">Ad Account Audit</option>
+              <option value="other">Not sure — just want to chat</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="spend">Current Monthly Ad Spend</label>
+            <select id="spend" name="spend">
+              <option value="">— Select a range —</option>
+              <option value="0">Not running ads yet</option>
+              <option value="1k">$500 – $2,000 / month</option>
+              <option value="5k">$2,000 – $5,000 / month</option>
+              <option value="10k">$5,000 – $10,000 / month</option>
+              <option value="10k+">$10,000+ / month</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Tell us about your business, your goals, or what's not working with your current ads..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-lg" style="width: 100%; margin-top: 8px;">
+            Send Message
+          </button>
+
+          <div id="formMsg" style="display:none; margin-top: 16px; font-size: 14px; color: var(--light);"></div>
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </div>
+    <p>&copy; 2025 Freedom Marketing. All rights reserved.</p>
+    <p style="color: var(--gray); font-size: 13px;">Meta Ads · Facebook &amp; Instagram</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      // TODO: Replace this with your form handler (e.g. Formspree, EmailJS, or your backend)
+      // Example with Formspree: set action="https://formspree.io/f/YOUR_ID" method="POST" on the form
+      // and remove this JS handler.
+      const msg = document.getElementById('formMsg');
+      msg.style.display = 'block';
+      msg.textContent = "Thanks! We'll be in touch within 24 hours to schedule your strategy call.";
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

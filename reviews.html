@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Client Reviews — Freedom Marketing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html#book" class="btn">Book a Call</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <div class="services-hero">
+      <span class="section-tag">Client Reviews</span>
+      <h2 style="font-size: clamp(36px, 5vw, 64px); font-weight: 900; letter-spacing: -0.03em; line-height: 1.05; max-width: 700px;">
+        Real Results.<br>Real Businesses.
+      </h2>
+      <p style="color: var(--light); font-size: 17px; max-width: 520px; margin-top: 16px;">
+        Here's what our clients say after working with Freedom Marketing.
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num">50+</span>
+        <span class="stat-label">Happy Clients</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3.8×</span>
+        <span class="stat-label">Average ROAS</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">5★</span>
+        <span class="stat-label">Average Rating</span>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- REVIEWS GRID -->
+    <section>
+      <div class="reviews">
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Freedom Marketing completely transformed our lead flow. We went from spending $3,000 a month with almost nothing to show for it, to getting 40+ qualified leads every week. Easton and the team know their stuff."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Jordan T.</span>
+              <span class="reviewer-biz">Home Renovation Company</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"I was skeptical about Meta ads after being burned by another agency. Freedom Marketing was different from day one — transparent, data-driven, and actually accountable. Our ROAS went from 1.2x to 4.1x in 60 days."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Priya M.</span>
+              <span class="reviewer-biz">E-Commerce Brand</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Booked out our entire schedule within the first month. The strategy call alone gave us more clarity on our marketing than two years with our previous agency. Highly recommend."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Mike D.</span>
+              <span class="reviewer-biz">HVAC &amp; Plumbing Services</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"We'd tried running our own ads for a year with mediocre results. Within 3 weeks of working with Freedom, we had our lowest cost-per-lead ever. They just get it."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Sarah K.</span>
+              <span class="reviewer-biz">Real Estate Team</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Professional, responsive, and most importantly — they deliver. Our revenue is up 67% since we started working together. I refer every business owner I know to Freedom Marketing."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Chris B.</span>
+              <span class="reviewer-biz">Med Spa &amp; Wellness Clinic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"The reporting alone is worth it. I finally understand exactly what my ad spend is doing and why. No more guessing, no more wasted budget. Freedom Marketing is the real deal."</p>
+          <div class="reviewer">
+            <div class="reviewer-info">
+              <span class="reviewer-name">Amanda R.</span>
+              <span class="reviewer-biz">Online Coaching Business</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <div class="cta-band">
+      <h2>Ready to Be Our Next Success Story?</h2>
+      <p>Book a free strategy call and let's talk about what Freedom Marketing can do for your business.</p>
+      <a href="contact.html#book" class="btn btn-lg">Book a Free Strategy Call</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="logo.png" alt="Freedom Marketing" />
+    </div>
+    <p>&copy; 2025 Freedom Marketing. All rights reserved.</p>
+    <p style="color: var(--gray); font-size: 13px;">Meta Ads · Facebook &amp; Instagram</p>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
