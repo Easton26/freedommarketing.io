@@ -50,7 +50,7 @@
 
       <!-- RIGHT: FORM -->
       <div>
-        <form id="contactForm" onsubmit="handleSubmit(event)">
+        <form id="contactForm" action="https://formspree.io/f/xzdkgbdo" method="POST">
 
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -123,16 +123,6 @@
       document.getElementById('navLinks').classList.toggle('open');
     }
 
-    function handleSubmit(e) {
-      e.preventDefault();
-      // TODO: Replace this with your form handler (e.g. Formspree, EmailJS, or your backend)
-      // Example with Formspree: set action="https://formspree.io/f/YOUR_ID" method="POST" on the form
-      // and remove this JS handler.
-      const msg = document.getElementById('formMsg');
-      msg.style.display = 'block';
-      msg.textContent = "Thanks! We'll be in touch within 24 hours to schedule your strategy call.";
-      e.target.reset();
-    }
   </script>
 </body>
 </html>
