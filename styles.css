@@ -748,3 +748,50 @@ footer p {
 
   .cta-band { padding: 60px 24px; }
 }
+
+/* ── LEGAL PAGES ── */
+.legal {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 48px 100px;
+}
+
+.legal h3 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 48px 0 12px;
+}
+
+.legal p,
+.legal li {
+  color: var(--light);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.legal ul {
+  padding-left: 22px;
+  margin-bottom: 12px;
+}
+
+.legal a { text-decoration: underline; }
+
+.legal-updated {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+.footer-links a:hover { color: var(--white); }
+
+@media (max-width: 768px) {
+  .legal { padding: 0 24px 80px; }
+}
